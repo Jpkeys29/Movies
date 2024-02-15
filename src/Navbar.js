@@ -17,7 +17,7 @@ export default function NavBar(){
           onChange={(e) => setQuery(e.target.value)}
         />
         <p className="num-results">
-          Found <strong>{movies.length}</strong> results
+          Found <strong>X</strong> results
         </p>
       </nav>
     )
