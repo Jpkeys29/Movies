@@ -8,10 +8,7 @@ const average = (arr) =>
 
 
 export default function MainContent () {
-    
-
     return (
-
         <main className="main">
             <ListBox />
             <WatchedBox />
