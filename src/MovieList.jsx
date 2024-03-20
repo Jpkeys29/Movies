@@ -2,8 +2,7 @@ import { useState } from "react";
 import { tempMovieData, tempWatchedData } from './MoviesArray';
 
 
-export default function MovieList () {
-    const [movies, setMovies] = useState(tempMovieData);
+export default function MovieList ({movies}) {
 
     return (
         <ul className="list">
