@@ -1,7 +1,7 @@
 import SearchBar from "./SearchBar"
 import SearchResults from "./SearchResults"
 
-export default function NavBar () {
+export default function NavBar ({movies}) {
 
     return (
         <nav className="nav-bar">
@@ -10,7 +10,7 @@ export default function NavBar () {
                 <h1>usePopcorn</h1>
             </div>
         <SearchBar />
-        <SearchResults />
+        <SearchResults movies={movies} />
         
         </nav>
     )

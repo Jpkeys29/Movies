@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-    <NavBar />
+    <NavBar movies={movies} />
     <MainContent movies={movies} />  
     </>
   );
