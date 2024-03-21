@@ -7,11 +7,10 @@ const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
 
-export default function MainContent ({movies}) {
+export default function MainContent ({children}) {
     return (
         <main className="main">
-            <ListBox movies={movies} />
-            <WatchedBox />
+            {children}
         </main>
     )
 }

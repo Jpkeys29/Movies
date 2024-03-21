@@ -4,6 +4,9 @@ import MainContent from './MainContent.jsx';
 import { tempMovieData, tempWatchedData } from './MoviesArray';
 import SearchBar from "./SearchBar"
 import SearchResults from "./SearchResults"
+import MovieList from './MovieList.jsx';
+import ListBox from './List.Box.jsx';
+import WatchedBox from './WatchedBox.jsx';
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -13,7 +16,7 @@ function App() {
 
   return (
     <>
-    <NavBar movies={movies}>
+    <NavBar>
       <div className="logo">
         <span role="img">🍿</span>
         <h1>usePopcorn</h1>
@@ -21,7 +24,12 @@ function App() {
       <SearchBar />
       <SearchResults movies={movies} />
     </NavBar>
-    <MainContent movies={movies} />  
+    <MainContent>
+      <ListBox>
+        <MovieList movies={movies} />
+      </ListBox>
+    <WatchedBox />
+    </MainContent>  
     </>
   );
 }
