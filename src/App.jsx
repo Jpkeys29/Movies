@@ -5,35 +5,46 @@ import { tempMovieData, tempWatchedData } from './MoviesArray';
 import SearchBar from "./SearchBar"
 import SearchResults from "./SearchResults"
 import MovieList from './MovieList.jsx';
-import ListBox from './List.Box.jsx';
-import WatchedBox from './WatchedBox.jsx';
+import Box from './List.Box.jsx';
+import WatchedSummary from './WatchedBox.jsx';
+import WatchedMovieList from './WatchedBox.jsx';
+import WatchedMovie from './WatchedBox.jsx';
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
 function App() {
   const [movies, setMovies] = useState(tempMovieData);
+  const [watched, setWatched] = useState(tempWatchedData);
+
 
   return (
     <>
-    <NavBar>
-      <div className="logo">
-        <span role="img">🍿</span>
-        <h1>usePopcorn</h1>
-      </div>
-      <SearchBar />
-      <SearchResults movies={movies} />
-    </NavBar>
-    <MainContent>
-      <ListBox>
-        <MovieList movies={movies} />
-      </ListBox>
-    <WatchedBox />
-    </MainContent>  
+      <NavBar>
+        <Logo />
+        <SearchBar />
+        <SearchResults movies={movies} />
+      </NavBar>
+      <MainContent>
+        <Box>
+          <MovieList movies={movies} />
+        </Box>
+        <Box>
+          <WatchedSummary watched={watched} />
+          <WatchedMovieList watched={watched} />
+          {/* <WatchedMovie watched={watched} /> */}
+        </Box>
+      </MainContent>
     </>
   );
 }
 
+function Logo() {
+  return <div className='logo'>
+    <span role="img">🍿</span>
+    <h1>usePopcorn</h1>
+  </div>
+}
 
 export default App
 
