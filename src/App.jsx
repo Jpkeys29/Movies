@@ -5,7 +5,7 @@ import { tempMovieData, tempWatchedData } from './MoviesArray';
 import SearchBar from "./SearchBar"
 import SearchResults from "./SearchResults"
 import MovieList from './MovieList.jsx';
-import Box from './List.Box.jsx';
+import Box from './Box.jsx';
 import WatchedSummary from './WatchedBox.jsx';
 import WatchedMovieList from './WatchedBox.jsx';
 import WatchedMovie from './WatchedBox.jsx';
@@ -32,7 +32,6 @@ function App() {
         <Box>
           <WatchedSummary watched={watched} />
           <WatchedMovieList watched={watched} />
-          {/* <WatchedMovie watched={watched} /> */}
         </Box>
       </MainContent>
     </>

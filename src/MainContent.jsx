@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { tempMovieData, tempWatchedData } from './MoviesArray';
-import ListBox from "./List.Box";
+import ListBox from "./Box";
 import WatchedBox from "./WatchedBox";
 
 const average = (arr) =>
