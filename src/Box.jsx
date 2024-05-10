@@ -1,7 +1,8 @@
 import { useState } from "react";
 
+
 export default function Box ({children}) {
-    const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
     return (
         <div className="box">

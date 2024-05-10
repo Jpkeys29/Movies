@@ -7,7 +7,7 @@ import SearchResults from "./SearchResults"
 import MovieList from './MovieList.jsx';
 import Box from './Box.jsx';
 import WatchedSummary from './WatchedBox.jsx';
-import WatchedMovieList from './WatchedBox.jsx';
+import WatchedMovieList from './WatchedMovieList.jsx'
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -15,6 +15,7 @@ const average = (arr) =>
 function App() {
   const [movies, setMovies] = useState(tempMovieData);
   const [watched, setWatched] = useState(tempWatchedData);
+
 
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
         <SearchResults movies={movies} />
       </NavBar>
 
-      <MainContent>
+      <MainContent >
         <Box>
           <MovieList movies={movies} />
         </Box>
