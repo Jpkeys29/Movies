@@ -33,7 +33,8 @@ function App() {
 
         <Box>
           <WatchedSummary watched={watched} />
-          <StarRating />
+          <StarRating maxRating={5} />
+          <StarRating maxRating={10} />
           <WatchedMovieList watched={watched} />
         </Box>
       </MainContent>
