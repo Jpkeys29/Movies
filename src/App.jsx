@@ -8,7 +8,7 @@ import MovieList from './MovieList.jsx';
 import Box from './Box.jsx';
 import WatchedSummary from './WatchedBox.jsx';
 import WatchedMovieList from './WatchedMovieList.jsx'
-import StartRating from './StartRating.jsx';
+import StarRating from './StarRating.jsx';
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
@@ -33,7 +33,7 @@ function App() {
 
         <Box>
           <WatchedSummary watched={watched} />
-          <StartRating />
+          <StarRating />
           <WatchedMovieList watched={watched} />
         </Box>
       </MainContent>
