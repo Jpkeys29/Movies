@@ -355,6 +355,13 @@ body {
   margin: 0;
 }
 
+.starStyle{
+  width: '48px';
+  height: '48px';
+  display: block;
+  cursor: pointer;
+}
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
