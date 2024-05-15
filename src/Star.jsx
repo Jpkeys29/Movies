@@ -1,6 +1,6 @@
-export default function Star({onClick}) {
+export default function Star({onRate}) {
     return (
-        <div role="button" className="starStyle" onClick={onClick}>
+        <div role="button" className="starStyle" onClick={onRate}>
             ⭐️
         </div>
     )
