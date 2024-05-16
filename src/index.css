@@ -342,12 +342,14 @@ body {
 .star{
   display: flex;
   align-items: center;
+  height: 48px;
   gap: 25px;
 }
 
 .star-indiv{
   display: flex;
   gap: 10px;
+  height: 48px;
 }
 
 .star-text{
